@@ -30,3 +30,11 @@ def keyword(name,age):
     print(name,age)
 keyword(name="hudha",age=22)
 keyword(age=21,name="mehshan",) #Order doesn’t matter when using keyword arguments.
+
+#printing each key & value:
+def display(**details):
+    for key,value in details.items():
+        print(key,":",value)
+
+display(name="aisha",age=40,city="Calicut")
+       
