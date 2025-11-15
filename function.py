@@ -2,20 +2,20 @@
 def greet():
     print("hello")
 
-greet() # hello
+#greet() # hello
 
 #with Arguments:
 def sum(a,b):
     print(a+b)
 
-sum(5,3) # 8
+#sum(5,3) # 8
 #sum(5) #error
 
 #Arbitrary Arguments -*arg
 def total(*number):
     print(number)
 
-total(1,2,3,4,5,6,7)
+#total(1,2,3,4,5,6,7)
 
 def sum_all(*number):
     s=0
@@ -23,18 +23,26 @@ def sum_all(*number):
         s +=n
         print(s)
 
-sum_all(1,2,3,4,5)
+#sum_all(1,2,3,4,5)
 
 #Keyword Arguments:
 def keyword(name,age):
     print(name,age)
-keyword(name="hudha",age=22)
-keyword(age=21,name="mehshan",) #Order doesn’t matter when using keyword arguments.
+#keyword(name="hudha",age=22)
+#keyword(age=21,name="mehshan",) #Order doesn’t matter when using keyword arguments.
 
 #printing each key & value:
 def display(**details):
     for key,value in details.items():
         print(key,":",value)
 
-display(name="aisha",age=40,city="Calicut")
+#display(name="aisha",age=40,city="Calicut")
        
+if __name__ == "__main__":
+    greet()
+    sum(5,3)
+    total(1,2,3,4,5,6,7)
+    sum_all(1,2,3,4,5)
+    keyword(name="hudha", age=22)
+    keyword(age=21, name="mehshan")
+    display(name="aisha", age=40, city="Calicut")
