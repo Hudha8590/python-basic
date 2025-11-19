@@ -23,9 +23,12 @@ print(next(i)) #this code will work  without crashing the memory.
 
 
 def mygen():
-    
-       yield  n
-    
+    yield  10
+    yield  20
+    yield  10
+    yield  20
+    yield  20
+    yield  20
 
 m=mygen()
 print(next(m))
@@ -34,3 +37,12 @@ print(next(m))
 print(next(m))
 print(next(m))
 print(next(m))
+
+#COUNTER:
+def Count(n):
+     current=0
+     while current<n:
+          current+=1
+          yield current
+
+Count(5)

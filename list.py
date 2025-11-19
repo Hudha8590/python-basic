@@ -51,6 +51,8 @@ print(new_list)
 new_car=[car for car in cars if "bmw" in car]
 print(new_car)
 
+
+
 #index(x)
 print(cars.index("bmw"))
 

@@ -73,3 +73,9 @@ lengths={fruit:len(fruit) for fruit in fruits}
 dic={i:fruit for i,fruit in enumerate(fruits)}
 print(dic)
 print(lengths)
+
+#Convert two lists into a dictionary
+keys = ["name", "age", "city"]
+values = ["Aisha", 20, "Kochi"]
+result={k:v for k,v in zip(keys,values)}
+print(result)

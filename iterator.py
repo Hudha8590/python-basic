@@ -5,6 +5,7 @@ print(next(it))
 print(next(it))
 print(next(it))
 
+
 #Creating Your Own Iterator:
 class counter:
     def __init__(self,n):
@@ -23,3 +24,4 @@ class counter:
 c=counter(3)
 for i in c:
      print(i)
+
